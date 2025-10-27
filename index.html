@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rompe Bloques</title>
+  <!-- Fuente suave y redondeada-->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- Título del juego  -->
+    <h1>✨ Breakout ✨</h1>
+    
+    <!-- Barra de información superior -->
+    <div id="ui">
+      <div id="scores">
+        Puntaje: <span id="score">0</span> — Récord: <span id="high">0</span>
+      </div>
+      <button id="startBtn">🎮 Iniciar / Reiniciar</button>
+      <div id="lives">
+        Vidas: <span id="livesCount">3</span>
+      </div>
+    </div>
+    
+    <!-- Canvas donde se dibuja el juego -->
+    <canvas id="game" width="640" height="480"></canvas>
+    
+    <!-- Instrucciones de juego -->
+    <div id="caption">Usa las flechas ← → para mover la barra</div>
+  </main>
+  
+  <!-- Script del juego cargado al final -->
+  <script src="script.js" defer></script>
+</body>
+</html>
